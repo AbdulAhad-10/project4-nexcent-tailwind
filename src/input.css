@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+@layer utilities {
+  .para-text {
+    @apply text-[#717171] text-sm;
+  }
+  .btn {
+    @apply bg-[#4CAF4F] py-[10px] px-5 text-white rounded-[4px];
+  }
+  .lg-spacing {
+    @apply lg:my-10 lg:px-36;
+  }
+  .spacing {
+    @apply px-4 my-10;
+  }
+}
